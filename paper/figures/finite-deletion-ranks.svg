@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="310" viewBox="0 0 840 310">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker>
+    <marker id="bad-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#a53636"/></marker>
+  </defs>
+  <rect width="840" height="310" fill="white"/>
+  <g fill="none" stroke-width="2">
+    <path d="M174 139 L384 81 M174 161 L384 229" stroke="#344952" marker-end="url(#arrow)"/>
+    <path d="M410 38 C320 4 150 15 145 116" stroke="#a53636" stroke-dasharray="6,4" marker-end="url(#bad-arrow)"/>
+    <path d="M410 272 C320 306 150 295 145 184" stroke="#a53636" stroke-dasharray="6,4" marker-end="url(#bad-arrow)"/>
+  </g>
+  <g font-family="serif" font-size="18" fill="#263b44" text-anchor="middle">
+    <circle cx="140" cy="150" r="34" fill="#edf4ef" stroke="#344952"/>
+    <circle cx="420" cy="70" r="34" fill="#f6eeee" stroke="#344952"/>
+    <circle cx="420" cy="240" r="34" fill="#f6eeee" stroke="#344952"/>
+    <text x="140" y="156">a (p)</text>
+    <text x="420" y="76">b (q)</text>
+    <text x="420" y="246">c (q)</text>
+    <text x="70" y="200">rank 2</text>
+    <text x="470" y="110">rank 1</text>
+    <text x="470" y="200">rank 1</text>
+    <text x="270" y="109">not B</text>
+    <text x="270" y="210">not B</text>
+    <text x="280" y="34" fill="#a53636">B</text>
+    <text x="280" y="291" fill="#a53636">B</text>
+  </g>
+  <g font-family="monospace" font-size="16" fill="#263b44">
+    <text x="555" y="66">round   alive(a,b,c)</text>
+    <text x="555" y="100">  0       (T,T,T)</text>
+    <text x="555" y="134">  1       (T,F,F)</text>
+    <text x="555" y="168">  2       (F,F,F)</text>
+    <text x="555" y="220">rank = (2,1,1)</text>
+    <text x="555" y="254">q replies: b,c -&gt; a</text>
+  </g>
+</svg>

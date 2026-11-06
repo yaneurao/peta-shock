@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#454545"/></marker></defs>
+  <rect width="960" height="300" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#222" text-anchor="middle">
+    <text x="235" y="29" font-size="21">Selected path to a leaf</text>
+    <text x="716" y="29" font-size="21">Selected cycle and its predecessor</text>
+    <g stroke="#454545" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <path d="M92 106H164"/><path d="M238 106H310"/><path d="M382 106H437"/>
+      <path d="M574 106H653"/>
+      <path d="M722 89Q780 44 838 89"/>
+      <path d="M838 124Q780 170 722 124"/>
+    </g>
+    <g fill="#edf4f0" stroke="#426652" stroke-width="2">
+      <circle cx="57" cy="106" r="35"/><circle cx="201" cy="106" r="35"/><circle cx="346" cy="106" r="35"/>
+    </g>
+    <g fill="#f1f1f8" stroke="#5c5c74" stroke-width="2">
+      <circle cx="539" cy="106" r="35"/><circle cx="688" cy="106" r="35"/><circle cx="873" cy="106" r="35"/>
+    </g>
+    <g font-size="23"><text x="57" y="114">X</text><text x="201" y="114">A</text><text x="346" y="114">B</text><text x="539" y="114">R</text><text x="688" y="114">C</text><text x="873" y="114">D</text></g>
+    <rect x="440" y="82" width="30" height="49" fill="#fff" stroke="#454545" stroke-width="2"/>
+    <text x="455" y="158" font-size="15">leaf</text>
+    <g font-size="17"><text x="57" y="172">d = min(2, L)</text><text x="201" y="172">d = min(1, L)</text><text x="346" y="172">d = 0</text><text x="539" y="198">d = L</text><text x="688" y="198">d = L</text><text x="873" y="198">d = L</text></g>
+    <text x="480" y="252" font-size="19">L is the depth cap. A leaf move has depth 0.</text>
+    <text x="480" y="279" font-size="18">Depth L can also mean a finite selected path of length at least L.</text>
+  </g>
+</svg>

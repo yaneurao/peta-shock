@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'Noto Sans CJK JP', sans-serif; font-size: 21px; fill: #202832; }
+      .small { font-size: 18px; }
+      .edge { fill: none; stroke: #475569; stroke-width: 2.5; marker-end: url(#arrow); }
+      .node { fill: #f3f7fc; stroke: #38618b; stroke-width: 2.5; }
+      .exit { fill: #f5f5f5; stroke: #727b85; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1000" height="440" fill="white"/>
+  <path class="edge" d="M 185 193 L 417 122"/>
+  <path class="edge" d="M 185 245 L 417 316"/>
+  <path class="edge" d="M 582 100 L 705 100"/>
+  <path class="edge" d="M 582 340 L 705 340"/>
+  <circle class="node" cx="120" cy="220" r="79"/>
+  <text x="120" y="200" text-anchor="middle">A（先手番）</text>
+  <text x="120" y="234" text-anchor="middle">値 +50</text>
+  <text class="small" x="120" y="263" text-anchor="middle">bを選ぶ</text>
+  <circle class="node" cx="500" cy="100" r="81"/>
+  <circle class="node" cx="500" cy="340" r="81"/>
+  <text x="500" y="91" text-anchor="middle">B（後手番）</text>
+  <text x="500" y="126" text-anchor="middle">値 +200</text>
+  <text x="500" y="331" text-anchor="middle">C（後手番）</text>
+  <text x="500" y="366" text-anchor="middle">値 −50</text>
+  <rect class="exit" x="711" y="64" width="270" height="72" rx="4"/>
+  <rect class="exit" x="711" y="304" width="270" height="72" rx="4"/>
+  <text x="846" y="95" text-anchor="middle">出口 +200</text>
+  <text class="small" x="846" y="123" text-anchor="middle">後手視点の探索評価値</text>
+  <text x="846" y="335" text-anchor="middle">出口 −50</text>
+  <text class="small" x="846" y="363" text-anchor="middle">後手視点の探索評価値</text>
+  <text class="small" x="286" y="116" text-anchor="middle">候補手a</text>
+  <text x="286" y="146" text-anchor="middle">+150 → −200</text>
+  <text class="small" x="286" y="309" text-anchor="middle">候補手b</text>
+  <text x="286" y="339" text-anchor="middle">−30 → +50</text>
+  <text class="small" x="500" y="226" text-anchor="middle">子の手番は相手側</text>
+  <text class="small" x="500" y="254" text-anchor="middle">親へ戻すときは符号を反転</text>
+</svg>

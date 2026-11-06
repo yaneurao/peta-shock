@@ -1,0 +1,6 @@
+name = "peta_shock_proof"
+version = "0.1.0"
+defaultTargets = ["PetaProof"]
+
+[[lean_lib]]
+name = "PetaProof"

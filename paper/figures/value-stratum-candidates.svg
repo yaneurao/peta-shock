@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="310" viewBox="0 0 760 310">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker></defs>
+  <rect width="760" height="310" fill="white"/>
+  <rect x="40" y="59" width="282" height="176" fill="#f2f5f5"/>
+  <rect x="443" y="59" width="279" height="176" fill="#eef4ee"/>
+  <g font-family="serif" font-size="16" fill="#263b44">
+    <text x="380" y="26" text-anchor="middle" font-size="20">Different value levels do not share one rank order</text>
+    <text x="180" y="82" text-anchor="middle">value 0</text>
+    <text x="583" y="82" text-anchor="middle">value 20</text>
+    <path d="M143 127 Q192 100 241 127" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M241 155 Q192 187 143 155" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M313 141 H460" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="386" y="119" text-anchor="middle">0 to 20</text>
+    <text x="386" y="175" text-anchor="middle">no rank test</text>
+    <path d="M533 141 H609" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <circle cx="108" cy="141" r="36" fill="white" stroke="#344952"/>
+    <circle cx="277" cy="141" r="36" fill="white" stroke="#344952"/>
+    <circle cx="497" cy="141" r="36" fill="white" stroke="#344952"/>
+    <circle cx="646" cy="141" r="36" fill="white" stroke="#344952"/>
+    <text x="108" y="137" text-anchor="middle">A (p)</text><text x="108" y="158" text-anchor="middle">rank 0</text>
+    <text x="277" y="137" text-anchor="middle">B (q)</text><text x="277" y="158" text-anchor="middle">rank 1</text>
+    <text x="497" y="137" text-anchor="middle">C (p)</text><text x="497" y="158" text-anchor="middle">rank 1</text>
+    <text x="646" y="137" text-anchor="middle">D (q)</text><text x="646" y="158" text-anchor="middle">rank 0</text>
+    <path d="M108 177 V192 M497 177 V192 M646 177 V192" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="82" y="196" width="52" height="28" fill="white" stroke="#344952"/>
+    <rect x="471" y="196" width="52" height="28" fill="white" stroke="#344952"/>
+    <rect x="620" y="196" width="52" height="28" fill="white" stroke="#344952"/>
+    <text x="108" y="216" text-anchor="middle">0</text>
+    <text x="497" y="216" text-anchor="middle">20</text>
+    <text x="646" y="216" text-anchor="middle">20</text>
+    <text x="380" y="265" text-anchor="middle">A to B is quiet: a rank reset is allowed at value 0.</text>
+    <text x="380" y="288" text-anchor="middle">Every closed walk stays at one value level. All internal edges are quiet.</text>
+  </g>
+</svg>

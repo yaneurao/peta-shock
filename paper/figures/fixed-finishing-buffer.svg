@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="760" height="210" fill="white"/>
+  <g font-family="sans-serif" fill="#263238" font-size="14" text-anchor="middle">
+    <text x="380" y="25" font-size="17" font-weight="bold">Store each finished vertex in the next unused slot</text>
+    <g stroke="#35444b">
+      <rect x="110" y="65" width="135" height="50" fill="#e8f2f0"/>
+      <rect x="245" y="65" width="135" height="50" fill="#e8f2f0"/>
+      <rect x="380" y="65" width="135" height="50" fill="#f4eee9"/>
+      <rect x="515" y="65" width="135" height="50" fill="#eef2f4"/>
+    </g>
+    <text x="177" y="95">A</text>
+    <text x="312" y="95">B</text>
+    <text x="447" y="95">write C here</text>
+    <text x="582" y="95">unused</text>
+    <text x="177" y="135">0</text>
+    <text x="312" y="135">1</text>
+    <text x="447" y="135">2 = used</text>
+    <text x="582" y="135">3</text>
+    <text x="380" y="165">After storing C: used = 3; capacity remains 4; A and B are unchanged.</text>
+    <path d="M 640 184 H 122" fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="380" y="202">Second DFS reads the filled array in reverse index order.</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="330" viewBox="0 0 840 330">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker></defs>
+  <rect width="840" height="330" fill="white"/>
+  <g font-family="serif" font-size="18" fill="#263b44" text-anchor="middle">
+    <text x="240" y="28">Distinct IDs for parallel edges</text>
+    <text x="670" y="28">CSR incoming rows</text>
+    <g fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M115 136 Q195 56 275 136"/>
+      <path d="M115 164 Q195 244 275 164"/>
+      <path d="M335 150 L425 150"/>
+      <path d="M465 128 C520 67 532 226 466 175"/>
+    </g>
+    <circle cx="85" cy="150" r="32" fill="#edf4ef" stroke="#344952"/>
+    <circle cx="305" cy="150" r="32" fill="white" stroke="#344952"/>
+    <circle cx="457" cy="150" r="32" fill="#dbeadf" stroke="#344952"/>
+    <text x="85" y="146">a</text><text x="85" y="165" font-size="14">AND</text>
+    <text x="305" y="146">b</text><text x="305" y="165" font-size="14">OR</text>
+    <text x="457" y="156">z</text>
+    <text x="195" y="93">(a,0)</text><text x="195" y="221">(a,1)</text>
+    <text x="380" y="135">(b,0)</text><text x="505" y="83">(z,0)</text>
+    <text x="260" y="276">pop b once: notify (a,0) and (a,1)</text>
+    <text x="260" y="305">remaining[a]: 2 -&gt; 1 -&gt; 0</text>
+  </g>
+  <g font-family="monospace" font-size="17" fill="#263b44">
+    <text x="565" y="81">row a: []</text>
+    <text x="565" y="119">row b: [(a,0),(a,1)]</text>
+    <text x="565" y="157">row z: [(z,0),(b,0)]</text>
+    <text x="565" y="210">offset = [0,0,2,4]</text>
+    <text x="565" y="248">memory = [a0,a1,z0,b0]</text>
+    <text x="565" y="286">4 IDs; 3 vertices</text>
+  </g>
+</svg>

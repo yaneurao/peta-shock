@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker></defs>
+  <rect width="840" height="320" fill="white"/>
+  <g font-family="serif" font-size="19" fill="#263b44" text-anchor="middle">
+    <text x="218" y="29">Returned phase: threshold 20</text>
+    <text x="647" y="29">ID-preserving residual</text>
+  </g>
+  <g font-family="monospace" font-size="17" fill="#263b44">
+    <text x="28" y="78">ID</text><text x="80" y="78">state</text><text x="280" y="78">won</text><text x="360" y="78">keep</text>
+    <text x="28" y="123">0</text><text x="80" y="123">a(p), +20</text><text x="280" y="123">true</text><text x="360" y="123">false</text>
+    <text x="28" y="168">1</text><text x="80" y="168">b(q), -20</text><text x="280" y="168">false</text><text x="360" y="168">true</text>
+    <text x="28" y="213">2</text><text x="80" y="213">success</text><text x="280" y="213">true</text><text x="360" y="213">false</text>
+    <text x="28" y="258">3</text><text x="80" y="258">failure</text><text x="280" y="258">false</text><text x="360" y="258">true</text>
+    <text x="28" y="303">only kept states are restored</text>
+  </g>
+  <g fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M577 165 L723 165"/>
+    <path d="M772 155 C820 112 822 220 769 184"/>
+    <path d="M570 77 C615 31 616 122 570 100" stroke-dasharray="5,4"/>
+    <path d="M570 247 C615 201 616 292 570 270" stroke-dasharray="5,4"/>
+  </g>
+  <g font-family="serif" font-size="18" fill="#263b44" text-anchor="middle">
+    <circle cx="550" cy="88" r="27" fill="#f4f4f4" stroke="#829092"/>
+    <circle cx="550" cy="165" r="27" fill="#edf4ef" stroke="#344952"/>
+    <circle cx="550" cy="258" r="27" fill="#f4f4f4" stroke="#829092"/>
+    <circle cx="751" cy="165" r="28" fill="#edf4ef" stroke="#344952"/>
+    <text x="550" y="94">a</text><text x="550" y="171">b</text>
+    <text x="550" y="264">S</text><text x="751" y="171">F</text>
+    <text x="684" y="79">dummy B</text><text x="684" y="250">dummy B</text>
+    <text x="780" y="231">B</text><text x="651" y="145">rank 2 -&gt; 1</text>
+    <text x="647" y="305">rank = (1,2,1,1)</text>
+  </g>
+</svg>

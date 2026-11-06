@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="246" viewBox="0 0 760 246">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker></defs>
+  <rect width="760" height="246" fill="white"/>
+  <g font-family="serif" font-size="16" fill="#263b44">
+    <text x="380" y="25" text-anchor="middle" font-size="20">Both certificates refer to the same returned set W</text>
+    <rect x="20" y="48" width="348" height="166" fill="#f4f1eb"/>
+    <rect x="392" y="48" width="348" height="166" fill="#edf4ef"/>
+    <text x="194" y="74" text-anchor="middle">threshold 30: W is empty</text>
+    <text x="566" y="74" text-anchor="middle">threshold 20: W contains U</text>
+    <path d="M122 131 L266 110" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M122 151 L266 178" fill="none" stroke="#344952" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+    <path d="M494 131 L638 110 M494 151 L638 178" fill="none" stroke="#344952" stroke-width="2" marker-end="url(#arrow)"/>
+    <circle cx="90" cy="141" r="33" fill="white" stroke="#344952"/>
+    <circle cx="462" cy="141" r="33" fill="#dbeadf" stroke="#344952"/>
+    <text x="90" y="147" text-anchor="middle">U (q)</text>
+    <text x="462" y="147" text-anchor="middle">U (q)</text>
+    <rect x="270" y="94" width="58" height="30" fill="white" stroke="#344952"/>
+    <rect x="270" y="164" width="58" height="30" fill="white" stroke="#344952"/>
+    <rect x="642" y="94" width="58" height="30" fill="white" stroke="#344952"/>
+    <rect x="642" y="164" width="58" height="30" fill="white" stroke="#344952"/>
+    <text x="299" y="115" text-anchor="middle">20</text><text x="299" y="185" text-anchor="middle">30</text>
+    <text x="671" y="115" text-anchor="middle">20</text><text x="671" y="185" text-anchor="middle">30</text>
+    <text x="380" y="236" text-anchor="middle">The counter is carried forward. At threshold 30, q refutes by choosing leaf 20.</text>
+  </g>
+</svg>

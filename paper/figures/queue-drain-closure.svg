@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="330" viewBox="0 0 720 330">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="720" height="330" fill="white"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#263238">
+    <text x="360" y="22" font-size="16" font-weight="bold">Two distinct edges to the same child: both must be notified</text>
+    <circle cx="90" cy="87" r="28" fill="#edf0f7" stroke="#35444b" stroke-width="2"/>
+    <text x="90" y="83" font-size="17">P</text><text x="90" y="101" font-size="12">q (AND)</text>
+    <circle cx="320" cy="87" r="28" fill="#e8f2f0" stroke="#35444b" stroke-width="2"/>
+    <text x="320" y="83" font-size="17">C</text><text x="320" y="101" font-size="12">p</text>
+    <path d="M 113 70 Q 205 29 297 70" fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 113 104 Q 205 145 297 104" fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="205" y="48" font-size="13">e1</text><text x="205" y="136" font-size="13">e2</text>
+    <path d="M 350 87 H 498" fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="502" y="62" width="110" height="50" rx="3" fill="#f3f5f6" stroke="#35444b" stroke-width="2"/>
+    <text x="557" y="83" font-size="14">leaf</text><text x="557" y="102" font-size="16">+20</text>
+    <text x="430" y="75" font-size="12">p's payoff</text>
+    <text x="360" y="164" font-size="13">Threshold 10; leaf notification has already confirmed C.</text>
+    <text x="90" y="200" font-size="13">operation</text>
+    <text x="225" y="200" font-size="13">start</text><text x="335" y="200" font-size="13">pop C</text>
+    <text x="445" y="200" font-size="13">notify e1</text><text x="555" y="200" font-size="13">notify e2</text>
+    <text x="665" y="200" font-size="13">pop P</text>
+    <text x="90" y="231" font-size="13">pending</text>
+    <text x="225" y="231" font-size="15">[C]</text><text x="335" y="231" font-size="15">[]</text>
+    <text x="445" y="231" font-size="15">[]</text><text x="555" y="231" font-size="15">[P]</text>
+    <text x="665" y="231" font-size="15">[]</text>
+    <text x="90" y="259" font-size="13">left[P]</text>
+    <text x="225" y="259" font-size="15">2</text><text x="335" y="259" font-size="15">2</text>
+    <text x="445" y="259" font-size="15">1</text><text x="555" y="259" font-size="15">0</text>
+    <text x="665" y="259" font-size="15">0</text>
+    <text x="360" y="303" font-size="13" font-weight="bold">Do not return between pop C and the end of C's incoming-edge scan.</text>
+  </g>
+</svg>

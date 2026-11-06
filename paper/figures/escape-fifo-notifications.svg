@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#334155"/></marker>
+  </defs>
+  <rect width="820" height="300" fill="white"/>
+  <g fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M130 123 L236 78"/><path d="M130 147 L236 192"/>
+    <path d="M305 75 L561 123"/><path d="M305 205 L406 205"/>
+    <path d="M475 197 L561 147"/>
+  </g>
+  <g stroke="#334155" stroke-width="2">
+    <rect x="60" y="100" width="70" height="70" fill="#e2e8f0"/>
+    <circle cx="270" cy="70" r="35" fill="#e0f2fe"/>
+    <circle cx="270" cy="205" r="35" fill="#e0f2fe"/>
+    <circle cx="440" cy="205" r="35" fill="#e0f2fe"/>
+    <circle cx="595" cy="135" r="35" fill="#dcfce7"/>
+  </g>
+  <g font-family="sans-serif" font-size="20" text-anchor="middle" fill="#0f172a">
+    <text x="95" y="129">r (q)</text><text x="95" y="153">d=3</text>
+    <text x="270" y="65">a</text><text x="270" y="87">d=1</text>
+    <text x="270" y="200">c</text><text x="270" y="222">d=2</text>
+    <text x="440" y="200">b</text><text x="440" y="222">d=1</text>
+    <text x="595" y="130">T</text><text x="595" y="152">d=0</text>
+    <text x="410" y="28">FIFO: T(0), a(1), b(1), c(2), r(3)</text>
+    <text x="410" y="280">r: remaining 2 → 1 → 0; maximum 0 → 1 → 2</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="310" viewBox="0 0 840 310">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker>
+    <marker id="bad" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#a53636"/></marker>
+  </defs>
+  <rect width="840" height="310" fill="white"/>
+  <g fill="none" stroke-width="2">
+    <path d="M118 142 L270 85 M118 168 L270 227" stroke="#344952" marker-end="url(#arrow)"/>
+    <path d="M291 44 C210 4 92 36 90 120 M291 268 C210 305 92 280 90 190" stroke="#a53636" stroke-dasharray="6,4" marker-end="url(#bad)"/>
+    <path d="M365 155 L420 155" stroke="#344952" marker-end="url(#arrow)"/>
+    <path d="M495 140 L578 87 M495 170 L578 223 M637 85 L717 139 M637 226 L717 170" stroke="#344952" marker-end="url(#arrow)"/>
+    <path d="M760 130 C820 83 830 219 765 180" stroke="#344952" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="serif" font-size="18" fill="#263b44" text-anchor="middle">
+    <text x="205" y="20">Synchronous deletion</text>
+    <text x="625" y="20">Reachability for q</text>
+    <circle cx="90" cy="155" r="30" fill="#edf4ef" stroke="#344952"/>
+    <circle cx="300" cy="75" r="30" fill="white" stroke="#344952"/>
+    <circle cx="300" cy="235" r="30" fill="white" stroke="#344952"/>
+    <text x="90" y="161">a (p)</text><text x="300" y="81">b (q)</text><text x="300" y="241">c (q)</text>
+    <text x="192" y="49" fill="#a53636">B</text><text x="192" y="289" fill="#a53636">B</text>
+    <circle cx="465" cy="155" r="31" fill="#edf4ef" stroke="#344952"/>
+    <circle cx="608" cy="75" r="31" fill="white" stroke="#344952"/>
+    <circle cx="608" cy="235" r="31" fill="white" stroke="#344952"/>
+    <circle cx="748" cy="155" r="33" fill="#dbeadf" stroke="#344952"/>
+    <text x="465" y="151">a</text><text x="465" y="169" font-size="14">AND</text>
+    <text x="608" y="71">b</text><text x="608" y="89" font-size="14">OR</text>
+    <text x="608" y="231">c</text><text x="608" y="249" font-size="14">OR</text>
+    <text x="748" y="151">goal</text><text x="748" y="169" font-size="14">dist 0</text>
+    <text x="465" y="207">dist 2</text><text x="608" y="128">dist 1</text><text x="608" y="288">dist 1</text>
+  </g>
+</svg>

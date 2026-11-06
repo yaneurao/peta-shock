@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="290" viewBox="0 0 720 290">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="720" height="290" fill="white"/>
+  <g font-family="sans-serif" fill="#263238" text-anchor="middle">
+    <text x="360" y="23" font-size="16" font-weight="bold">Reconverging paths do not duplicate ordinary work</text>
+    <g fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 104 118 L 243 70"/><path d="M 104 142 L 243 190"/>
+      <path d="M 297 70 L 433 118"/><path d="M 297 190 L 433 142"/>
+      <path d="M 490 130 H 595"/>
+    </g>
+    <circle cx="76" cy="130" r="29" fill="#e8f2f0" stroke="#35444b" stroke-width="2"/>
+    <text x="76" y="126" font-size="17">R</text><text x="76" y="145" font-size="12">p (OR)</text>
+    <circle cx="270" cy="60" r="29" fill="#edf0f7" stroke="#35444b" stroke-width="2"/>
+    <text x="270" y="56" font-size="17">A</text><text x="270" y="75" font-size="12">q</text>
+    <circle cx="270" cy="200" r="29" fill="#edf0f7" stroke="#35444b" stroke-width="2"/>
+    <text x="270" y="196" font-size="17">B</text><text x="270" y="215" font-size="12">q</text>
+    <circle cx="462" cy="130" r="29" fill="#e8f2f0" stroke="#35444b" stroke-width="2"/>
+    <text x="462" y="126" font-size="17">C</text><text x="462" y="145" font-size="12">p</text>
+    <rect x="600" y="105" width="82" height="50" rx="3" fill="#f3f5f6" stroke="#35444b" stroke-width="2"/>
+    <text x="641" y="126" font-size="13">leaf</text><text x="641" y="146" font-size="17">+20</text>
+    <text x="174" y="82" font-size="12">RA</text><text x="174" y="183" font-size="12">RB</text>
+    <text x="365" y="82" font-size="12">AC</text><text x="365" y="183" font-size="12">BC</text>
+    <text x="545" y="116" font-size="12">exit</text>
+    <text x="360" y="252" font-size="13">Actual pops: [C, A, B, R]. R is queued once, not once per path.</text>
+    <text x="360" y="276" font-size="13">1 leaf + 4 internal-edge visits + 4 pops = 9 = N + E.</text>
+  </g>
+</svg>

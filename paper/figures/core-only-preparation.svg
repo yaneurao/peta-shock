@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 0 760 270">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="760" height="270" fill="white"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="380" y="24" text-anchor="middle" font-size="16" font-weight="bold">Prepare and collect only the fixed checking core</text>
+    <rect x="180" y="48" width="240" height="165" rx="4" fill="#f4f7f5" stroke="#64746d" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="300" y="70" text-anchor="middle" font-size="13">C = {A, B}, K = 2, F = 2</text>
+    <g fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 111 135 H 219"/>
+      <path d="M 266 113 Q 300 78 338 113"/>
+      <path d="M 337 155 Q 300 195 265 155"/>
+    </g>
+    <circle cx="80" cy="135" r="31" fill="#e8f2f0" stroke="#35444b" stroke-width="2"/>
+    <circle cx="250" cy="135" r="30" fill="#edf0f7" stroke="#35444b" stroke-width="2"/>
+    <circle cx="360" cy="135" r="30" fill="#e8f2f0" stroke="#35444b" stroke-width="2"/>
+    <g text-anchor="middle">
+      <text x="80" y="131" font-size="17">R</text><text x="80" y="150" font-size="12">p</text>
+      <text x="250" y="131" font-size="17">A</text><text x="250" y="150" font-size="12">q</text>
+      <text x="360" y="131" font-size="17">B</text><text x="360" y="150" font-size="12">p</text>
+      <text x="303" y="92" font-size="12">check</text>
+      <text x="302" y="198" font-size="12">no check</text>
+    </g>
+    <g font-size="13">
+      <text x="454" y="68" font-weight="bold">First local call (safe cycle)</text>
+      <text x="454" y="96">Initialize rows: 2</text>
+      <text x="454" y="120">Classify edges: 2</text>
+      <text x="454" y="144">Register reverse edges: 2</text>
+      <text x="454" y="168">Deletion events: 0</text>
+      <text x="454" y="192">Collect survivors: 2</text>
+      <text x="454" y="219" font-weight="bold">Total: 8 events, return [A, B]</text>
+    </g>
+    <text x="380" y="252" text-anchor="middle" font-size="13">R is outside C: ordinary propagation confirms R after A and B are added.</text>
+  </g>
+</svg>

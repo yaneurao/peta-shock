@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="315" viewBox="0 0 760 315">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="760" height="315" fill="white"/>
+  <g font-family="sans-serif" fill="#263238" text-anchor="middle" font-size="14">
+    <text x="380" y="25" font-size="17" font-weight="bold">Two winning policies can have an unsafe union</text>
+    <g stroke="#35444b" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <path d="M 169 91 H 392"/>
+      <path d="M 420 121 V 186"/>
+      <path d="M 390 215 H 169"/>
+      <path d="M 140 186 V 121"/>
+      <path d="M 109 91 H 62"/>
+      <path d="M 451 215 H 503"/>
+    </g>
+    <circle cx="140" cy="91" r="29" fill="#e8f2f0" stroke="#35444b"/>
+    <circle cx="420" cy="91" r="29" fill="#eef2f4" stroke="#35444b"/>
+    <circle cx="420" cy="215" r="29" fill="#e8f2f0" stroke="#35444b"/>
+    <circle cx="140" cy="215" r="29" fill="#eef2f4" stroke="#35444b"/>
+    <text x="140" y="96">A (p)</text><text x="420" y="96">B (q)</text>
+    <text x="420" y="220">C (p)</text><text x="140" y="220">D (q)</text>
+    <rect x="12" y="73" width="48" height="36" fill="#f4eee9" stroke="#35444b"/>
+    <text x="36" y="96">20</text>
+    <rect x="506" y="197" width="48" height="36" fill="#f4eee9" stroke="#35444b"/>
+    <text x="530" y="220">20</text>
+    <g text-anchor="start">
+      <text x="500" y="65">All four internal edges are quiet.</text>
+      <text x="500" y="95">Policy 1: A goes to B; C exits.</text>
+      <text x="500" y="120">Policy 2: A exits; C goes to D.</text>
+      <text x="500" y="157">Mix: A goes to B; C goes to D.</text>
+    </g>
+    <text x="380" y="276">Common ranks for policy 1: (A, B, C, D) = (3, 2, 1, 4)</text>
+    <text x="380" y="300">Common ranks for policy 2: (A, B, C, D) = (1, 4, 3, 2)</text>
+  </g>
+</svg>

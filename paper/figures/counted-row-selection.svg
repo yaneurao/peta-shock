@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="760" height="220" fill="white"/>
+  <g font-family="sans-serif" fill="#263238" text-anchor="middle" font-size="14">
+    <text x="380" y="25" font-size="17" font-weight="bold">Rejected edges still incur inspection cost</text>
+    <rect x="25" y="66" width="200" height="74" rx="6" fill="#eef2f4" stroke="#35444b"/>
+    <rect x="290" y="66" width="180" height="74" rx="6" fill="#e8f2f0" stroke="#35444b"/>
+    <rect x="535" y="66" width="200" height="74" rx="6" fill="#f4eee9" stroke="#35444b"/>
+    <text x="125" y="91">Raw reverse row</text>
+    <text x="125" y="120">[e0, e1, e2, e3]</text>
+    <text x="380" y="91">Allowed edge IDs</text>
+    <text x="380" y="120">[e0, e2]</text>
+    <text x="635" y="91">Parent row for DFS</text>
+    <text x="635" y="120">[source(e0), source(e2)]</text>
+    <g stroke="#35444b" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 228 104 H 284"/>
+      <path d="M 473 104 H 529"/>
+    </g>
+    <text x="256" y="58">filter</text>
+    <text x="502" y="58">map</text>
+    <text x="380" y="176">4 inspections + 2 temporary writes + 2 source reads + 2 output writes = 10</text>
+    <text x="380" y="201">This is additional to DFS pop and parent-push attempts.</text>
+  </g>
+</svg>

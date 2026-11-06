@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="442" viewBox="0 0 760 442">
+  <defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 Z" fill="#344952"/></marker></defs>
+  <rect width="760" height="442" fill="white"/>
+  <rect x="25" y="48" width="510" height="362" fill="#eef3f2" stroke="#8caaa3" stroke-dasharray="5,4"/>
+  <g font-family="serif" fill="#263b44" font-size="16">
+    <text x="380" y="26" text-anchor="middle" font-size="20">A short path is not a shortest guaranteed escape</text>
+    <text x="43" y="75">S</text>
+    <path d="M113 161 L234 105 M288 92 L631 118" stroke="#344952" stroke-width="1.7" fill="none" marker-end="url(#arrow)"/>
+    <path d="M235 78 C140 45 45 100 72 157" stroke="#344952" stroke-width="1.7" fill="none" marker-end="url(#arrow)"/>
+    <path d="M119 186 L231 214 M106 205 L241 298 M289 223 L431 237 M286 310 L436 260 M481 220 L636 137" stroke="#217561" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+    <path d="M436 260 C420 395 80 385 76 207" stroke="#344952" stroke-width="1.7" fill="none" marker-end="url(#arrow)"/>
+    <g fill="white" stroke="#344952">
+      <circle cx="90" cy="180" r="29"/><circle cx="260" cy="90" r="29"/>
+      <circle cx="260" cy="220" r="29"/><circle cx="260" cy="320" r="29"/>
+      <circle cx="460" cy="240" r="29"/><circle cx="660" cy="120" r="29"/>
+    </g>
+    <text x="90" y="176" text-anchor="middle">A (p)</text><text x="90" y="195" text-anchor="middle">d = 3</text>
+    <text x="260" y="86" text-anchor="middle">B (q)</text><text x="260" y="105" text-anchor="middle">d = 4</text>
+    <text x="260" y="216" text-anchor="middle">C (q)</text><text x="260" y="235" text-anchor="middle">d = 2</text>
+    <text x="260" y="316" text-anchor="middle">F (q)</text><text x="260" y="335" text-anchor="middle">d = 2</text>
+    <text x="460" y="236" text-anchor="middle">E (p)</text><text x="460" y="255" text-anchor="middle">d = 1</text>
+    <text x="660" y="116" text-anchor="middle">exit</text><text x="660" y="135" text-anchor="middle">d = 0</text>
+    <text x="566" y="230">A to B to exit:</text><text x="566" y="252">2 steps if q agrees.</text>
+    <text x="566" y="295">A to C or F:</text><text x="566" y="317">escape within 3 steps,</text><text x="566" y="339">even if q delays.</text>
+    <text x="380" y="432" text-anchor="middle">All edges are unit cost. Green edges form the shortest guaranteed choices for p.</text>
+  </g>
+</svg>

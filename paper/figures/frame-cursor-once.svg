@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="245" viewBox="0 0 760 245">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35444b"/>
+    </marker>
+  </defs>
+  <rect width="760" height="245" fill="white"/>
+  <g font-family="sans-serif" fill="#263238" text-anchor="middle" font-size="14">
+    <text x="380" y="25" font-size="17" font-weight="bold">Advance the parent cursor before pushing a fresh child</text>
+    <text x="175" y="65">Before</text>
+    <text x="580" y="54">After consuming C</text>
+    <rect x="50" y="140" width="250" height="52" fill="#eef2f4" stroke="#35444b"/>
+    <text x="175" y="172">P: remaining slots [C, D]</text>
+    <rect x="440" y="77" width="280" height="52" fill="#e8f2f0" stroke="#35444b"/>
+    <text x="580" y="108">C: its own remaining slots</text>
+    <rect x="440" y="140" width="280" height="52" fill="#f4eee9" stroke="#35444b"/>
+    <text x="580" y="172">P: remaining slots [D]</text>
+    <path d="M 305 165 Q 369 92 433 103" fill="none" stroke="#35444b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="365" y="78">one trim</text>
+    <text x="365" y="98">one push</text>
+    <text x="380" y="223">Returning from C resumes at D; P does not scan C again.</text>
+  </g>
+</svg>
